@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel=stylesheet href="./css/normalize.css">
+    <link rel=stylesheet href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/tudo.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonte del Proyecto Raleway -->
@@ -17,28 +23,27 @@
     <div class="tudo">
     <section class="menu">
         <header class="menu__header">
-            <img src="assets\vector.png">
-            <h3 class="menu__title">Fulana de Tal</h3>
+            <img class ="menu__imagen" src="assets\vector.png">
+            <h3 class="menu__title">Brenda Elizabeth Martínez López</h3>
         </header>
         <nav>
             <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#contacto">Contacto@fulana.com</a></li>
+                <li class="menu__list__item"><a class="menu_item" id="activo" href="#sobre-mi">Sobre mi</a></li>
+                <li class="menu__list__item"><a class="menu_item" href="#skills">Skills</a></li>
+                <li class="menu__list__item"><a class="menu_item" href="#hobbies">Hobbies</a></li>
+                <li class="menu__list__item"><a class="menu_item" href="#formacion">Formación</a></li>
+                <li class="menu__list__item"><a class="menu_item" href="#xp">Proyectos</a></li>
+                <li class="menu__list__item"><a class="menu_item" href="#contacto">Contacto</a></li>
             </ul>
-            <li class="menu__list__item__contato"><a href="#contacto">contacto@fulana.com</a></li>
         </nav>
     </section>
 
     <!-- Sección del Header/Title/Hero -->
     <section class="title">
         <div class="title__div">
-            <img class="title__profile" src="assets\profile.png">
+            <img class=" title__imagen " src="assets\brenda.png">
             <div class="title__container">
-                <h2 class="title__bio">Hola, mi nombre es Fulana de Tal y construyo paginas web</h2>
+                <h2 class="title__bio">Hola, mi nombre es Brenda Elizabeth Martínez López y construyo páginas web</h2>
                 <h3 class="title__subsection">Soy formada en .... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
                 <ul class="title__network">
                      <!-- Pon los enlaces de tus redes sociales favoritas -->
