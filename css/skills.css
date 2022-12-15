@@ -1,0 +1,100 @@
+.skill__hobbies__xp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 88px;
+
+    width: 1440px;
+    height: 1245px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    
+    width: 1136px;
+    height: 244px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+.skills__title{
+    width: 82px;
+    height: 38px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    text-align: center;
+
+    color: #464646;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 1136px;
+    height: 174px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.skills__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+
+    width: 176px;
+    height: 174px;
+
+    /* Preto/branco */
+
+    background: #FFFFFF;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+
+
+
