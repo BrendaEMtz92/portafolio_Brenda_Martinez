@@ -1,0 +1,191 @@
+.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    width: 1136px;
+    height: 1886px;
+
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+
+.experience__section__title{
+    width: 361px;
+    height: 38px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+ 
+    text-align: center;
+
+    color: #464646;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.experience__box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 64px;
+    
+    width: 1136px;
+    height: 1816px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.experiencie__items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    
+    width: 1136px;
+    height: 406px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+ #experiencie__items__reverse{
+    flex-direction: row-reverse;
+}
+
+
+
+
+.experience__img{
+    width: 752px;
+    height: 406px;
+
+    border-radius: 0px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.experience__info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 368px;
+    height: 112px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+
+.experience__title{
+    width: 368px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 4px;
+  
+    color: #464646;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.experience__text{
+    width: 368px;
+    height: 19px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 4px;
+   
+    color: #464646;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.experience__description{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 560px;
+    height: 51px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.experiencia__botao--repo{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+
+    width: 116px;
+    height: 51px;
+
+    border: 1px solid #2A7AE4;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.experience__botao--demo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+
+    width: 105px;
+    height: 51px;
+
+    background: #2A7AE4;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+h2 h4{
+    flex-direction: row-reverse;
+}

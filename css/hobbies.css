@@ -54,7 +54,6 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 16px;
     gap: 8px;
 
     width: 176px;
@@ -65,4 +64,8 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+.hobbies__box ul{
+    padding-left: 16px;
 }
