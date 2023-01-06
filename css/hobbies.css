@@ -17,7 +17,6 @@
 
 .hobbies__title{
     width: 127px;
-    height: 38px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -66,6 +65,39 @@
     flex-grow: 0;
 }
 
+.hobbies__img{
+    padding: 8px;
+}
+
 .hobbies__box ul{
     padding-left: 16px;
+}
+
+@media screen and (max-width:768px) {
+
+    .hobbies{
+        width: 704px;
+        height: 340px;
+        align-self: center;
+        padding: 16px;
+    }
+
+    .hobbies__title{        
+        width: 57px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .hobbies__line{
+        width: 704px;
+        height: auto;
+        flex-wrap: wrap;
+
+    }
+
+    .hobbies__box{
+        width: 224px;
+        height: 118px;
+        flex-grow: 1;
+    }
 }

@@ -15,7 +15,6 @@
 
 .experience__section__title{
     width: 361px;
-    height: 38px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -58,9 +57,6 @@
     width: 1136px;
     height: 406px;
     
-    
-    /* Inside auto layout */
-    
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -69,9 +65,6 @@
  #experiencie__items__reverse{
     flex-direction: row-reverse;
 }
-
-
-
 
 .experience__img{
     width: 752px;
@@ -188,4 +181,81 @@
 }
 h2 h4{
     flex-direction: row-reverse;
+}
+
+@media screen and (max-width:768px) {
+    .experience{
+        padding: 32px;
+        gap: 16px;
+        width: 704px;
+        height: auto;
+    }
+    
+    .experience__section__title{
+        width: 248px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .experience__box{
+        width: 704px;
+        height: auto;
+        gap: 32px;
+
+    }
+
+    .experiencie__items{
+        flex-direction: column;
+        width: 704px;
+        height: auto;
+    }
+
+    .experience__img{
+        width: 704px;
+        height: 320px;
+    }
+
+    .experience__info-container{  
+        width: 704px;
+        height: 91px;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .experience__title{
+        width: 704px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 0px;
+
+    }
+
+    .experience__text{
+        width: 704px;
+        height: 16px;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 0px;
+    }
+
+    .experience__description{
+        height: 40px;
+    }
+
+    .experiencia__botao--repo{
+        padding: 12px 16px;
+        width: 108px;
+        height: 40px;
+    }
+
+    .experience__botao--demo{
+        padding: 12px 16px;
+        width: 96px;
+        height: 40px;
+
+    }
+    #experiencie__items__reverse{
+        flex-direction: column;
+    }
 }

@@ -17,7 +17,6 @@
 
 .academic__title{
     width: 339px;
-    height: 38px;
     
     font-family: 'Raleway';
     font-style: normal;
@@ -44,9 +43,6 @@
     width: 1136px;
     height: 347px;
 
-
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -59,8 +55,6 @@
     padding: 0px;
     gap: 8px;
 
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -68,18 +62,14 @@
 
 .academic__courses__list .academic__courses__item__img{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-
 
     width: 368px;
     height: 286px;
 
-    /* Preto/branco */
-
     background: #FFFFFF;
-
-    /* Inside auto layout */
 
     flex: none;
     order: 0;
@@ -88,6 +78,8 @@
 
 .academic__courses__item__title{
     
+
+    height: 26px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -113,4 +105,64 @@
     flex: none;
     order: 2;
     flex-grow: 0;
+    }
+
+    @media screen and (max-width:768px) {
+        .academic{
+            padding: 32px 0px;
+            width: 768px;
+            height: 291px;
+            
+        }
+
+        .academic__title{
+            width: 233px;
+            font-size: 22px;
+            line-height: 26px;
+        }
+
+        .academic__courses{
+            width: 704px;
+            height: auto;
+            align-self: center;
+        }
+
+
+        .academic__courses__list{
+        width: 224px;
+        height: 169px;
+        flex-grow: 1;
+        order: 1;
+        }
+
+        .academic__courses__list .academic__courses__item__img{
+            justify-content: center;
+            gap: 10px;
+            width: 224px;
+            height: 118px;
+            align-self: stretch;
+
+        }
+
+        .academic__courses__item__img img{
+            width: 84px;
+            height: 58px;
+        }
+
+        .academic__courses__item__title{
+            width: 187px;
+            height: 19px;
+            font-size: 16px;
+            line-height: 19px;
+        
+            
+        }
+        
+        .academic__courses__item__subtitle{
+            height: 16px;
+            font-size: 14px;
+            line-height: 16px;
+            
+
+        }
     }

@@ -20,7 +20,6 @@ body {
     line-height: 1;
     position: absolute;
     width: 1440px;
-    height: 5020px;
     left: 0px;
     top: 0px;
 }
@@ -103,8 +102,10 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media (min-width: 768px) {
-
+@media screen and (max-width:768px) {
+    body {
+        width: 768px;
+    }
 /* Menú */
 
 /*title*/

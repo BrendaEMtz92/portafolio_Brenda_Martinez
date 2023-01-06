@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     padding: 64px 0px ;
-    gap: 10px;
 
     width: 1440px;
     height: 383px;
@@ -33,7 +32,6 @@
 
 .about__title{
     width: 137px;
-    height: 38px;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -56,6 +54,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    justify-items: baseline;
     
     
     color: #464646;
@@ -72,4 +71,35 @@
     flex: none;
     order: 2;
     flex-grow: 0;
+}
+
+@media screen and (max-width:768px){
+    .about{
+        padding: 32px;
+        width: 704px;
+        height: auto;
+    }
+
+    .about__container{
+        width: 704px;
+        height: 222px;
+        align-self: stretch;
+    }
+
+    .about__title{
+        width: 94px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .about__paragraph{
+        width: 704px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .about__container img{
+        width: 140px;
+        height: 52px;
+    }
 }

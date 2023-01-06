@@ -1,0 +1,45 @@
+.footer{
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 1440px;
+    height: 102px;
+
+    background: #FFFFFF;
+
+    flex: none;
+    order: 6;
+    align-self: stretch;
+    flex-grow: 0
+}
+
+.footer__rodape{
+    
+    width: 229px;
+    height: 38px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #464646;
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+@media screen and (max-width:768px) {
+    
+    .footer{
+        padding: 32px;
+        width: 704px;
+    }
+}

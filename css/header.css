@@ -1,6 +1,15 @@
 
 .title{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 1136px;
+flex: none;
     order: 1;
+    flex-grow: 0;
 }
 
 .title__div{
@@ -16,7 +25,7 @@
 }
 
 .title__imagen{
-    height: 369px;
+    height: 368px;
     width: 368px; 
     flex:none;
     order: 1; 
@@ -34,7 +43,6 @@
     padding: 0px;
     gap:24px;
     width: 751px;
-    height: 246px;
     flex: none;
     order:0;
     flex-grow: 0;
@@ -60,8 +68,7 @@
 
 .title__subsection{
     width: 751px;
-    height: 52px;
-    
+
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -82,9 +89,43 @@
     padding: 0px;
     gap: 32px;
     width: 467px;
-    height: 24px; 
     flex: none;
     order: 2;
     flex-grow: 0;
    
+}
+
+@media screen and (max-width:768px){
+
+    .title{
+        width: 768px;
+    }
+    .title__div{
+        align-items: flex-start;
+        width: 704px;
+        height: 228px;
+        order: 1;
+    }
+
+    .title__imagen{   
+        width: 146px;
+        height: 146px;
+    }
+
+    .title__container{
+        width: 524px;
+        gap:12px;
+    }
+
+    .title__bio{
+        width: 524px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .title__subsection{
+        width: 524px;
+        line-height: 19px;
+        font-size: 16px;
+    }
 }
