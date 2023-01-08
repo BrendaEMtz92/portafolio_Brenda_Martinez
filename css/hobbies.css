@@ -101,3 +101,33 @@
         flex-grow: 1;
     }
 }
+
+@media screen and (max-width:360px) {
+    .hobbies{
+        padding: 16px;
+        width: 328px;
+        height: 508px;
+    }
+
+    .hobbies__title{
+        width: 57px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .hobbies__line{
+        width: 328px;
+        height: 118px;
+        flex-wrap: wrap;
+    }
+
+    .hobbies__box{
+        width: 156px;
+        height: 118px;
+    }
+
+    .hobbies__name{
+        font-weight: bold;
+    }
+    
+}

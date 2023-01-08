@@ -21,3 +21,15 @@
         gap:0px;
 }
 }
+
+@media screen and (max-width:360px){
+    .tudo{
+        width: 360px;
+        height: 4475px;
+        left: 0px;
+        top: 0px;
+        gap:0px;
+        
+
+    }
+}

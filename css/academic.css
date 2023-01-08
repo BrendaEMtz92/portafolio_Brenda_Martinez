@@ -166,3 +166,38 @@
 
         }
     }
+
+    @media screen and (max-width:360px) {
+        .academic{
+        padding: 32px;
+        width: 296px;
+        height: auto;
+    }
+
+    .academic__title{
+        width: 233px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .academic__courses{
+        flex-direction: column;
+        width: 296px;
+        padding: 32px;
+    }
+
+    .academic__courses__list{
+        width: 296px;
+        height: 169px;
+    }
+
+    .academic__courses__list .academic__courses__item__img{
+        justify-content: center;
+        gap: 10px;
+        width: 296px;
+        height: 118px;
+    }
+
+
+
+    }

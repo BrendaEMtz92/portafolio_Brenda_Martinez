@@ -122,6 +122,40 @@
 
 }
 
+@media screen and (max-width:360px) {
+    .skill__hobbies__xp{
+        gap: 0px;
+        width: 360px;
+    }
+
+    .skills{
+        padding: 16px;
+        width: 328px;
+        height: 508px;
+    }
+
+    .skills__title{
+        width: 57px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .skills__line{
+        width: 328px;
+        height: 118px;
+        flex-wrap: wrap;
+    }
+
+    .skills__box{
+        width: 156px;
+        height: 118px;
+    }
+
+    .skills__name{
+        font-weight: bold;
+    }
+}
+
 
 
 

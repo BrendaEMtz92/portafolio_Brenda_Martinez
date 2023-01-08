@@ -215,7 +215,7 @@ h2 h4{
         height: 320px;
     }
 
-    .experience__info-container{  
+    .experience__info{  
         width: 704px;
         height: 91px;
         align-self: stretch;
@@ -257,5 +257,55 @@ h2 h4{
     }
     #experiencie__items__reverse{
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .experience{
+        width: 296px;
+        height: auto;
+    }
+
+    .experience__section__title{
+        width: 248px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    .experience__box{
+        width: 360px;
+    }
+
+    .experiencie__items{
+        width: 296px;
+        height: auto;
+        padding: 32px;
+    }
+
+    .experience__img{
+        width: 296px;
+        height: 144px;
+    }
+
+    .experience__info-container{
+        width: 296px;
+
+        height: auto;
+    }
+
+    .experience__title{
+        width: 296px;
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .experience__text{
+        width: 296px;
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .experience__description{
+        width: 296px;
     }
 }

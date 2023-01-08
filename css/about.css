@@ -103,3 +103,30 @@
         height: 52px;
     }
 }
+
+@media screen and (max-width:360px) {
+
+    .about{
+        padding: 16px;
+        width: 328px;
+        height: 350px;
+    }
+
+    .about__container{
+        width: 328px;
+        height: 318px;
+    }
+    
+    .about__title{
+        width: 94px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .about__paragraph{
+        width: 328px;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: justify;
+    }
+}

@@ -91,10 +91,7 @@
         width: 704px;
         height: 56px;
     }
-
-    .menu__list{
-        width: auto;
-    }
+   
     .menu__list__item:nth-child(1),
     .menu__list__item:nth-child(2),
     .menu__list__item:nth-child(3),
@@ -102,4 +99,18 @@
     .menu__list__item:nth-child(5){
         display: none;
     }
+}
+
+@media screen and (max-width:360px){
+    
+    .menu{
+        gap: 10px;
+        width: 296px;
+    }
+
+    .menu__header{
+        width: 99px;
+        height: 24px;
+    }
+
 }
