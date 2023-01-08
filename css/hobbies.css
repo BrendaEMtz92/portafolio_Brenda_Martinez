@@ -110,7 +110,7 @@
     }
 
     .hobbies__title{
-        width: 57px;
+        width: auto;
         font-size: 22px;
         line-height: 26px;
     }

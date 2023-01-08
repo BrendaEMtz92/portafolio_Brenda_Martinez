@@ -47,11 +47,7 @@
 @media screen and (max-width:360px) {
 
     .footer{
-        width: 360px;
+        width: 296px;
     }
 
-    .footer__rodape{
-        text-align:start
-    }
-    
 }
