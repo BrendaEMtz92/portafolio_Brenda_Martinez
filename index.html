@@ -299,6 +299,7 @@
                     <div class="formcontato--esquerda">
                         <img class="formcontato__img" src="assets\contact_image.png">
                     </div>
+
                     <div class="formcontato__text__content">
                         <div class="formcontato__text">
                             <h2 class="formcontato__title">Contacto</h2>
@@ -307,13 +308,65 @@
                                 contacto con
                                 usted lo antes posible. </h3>
                         </div>
-                        <form class="formcontato__form" name="form">
-                            <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                            <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                            <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                            <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
-                                placeholder="Mensaje"></textarea>
-                            <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                        <form class="formcontato__form" id="formulario" name="form" id="formulario">
+
+                            <div class="input-container " id="input-container__nombre">
+                                <label for="nombre" class="formcontato__label"> Nombre</label>
+                                <div class="formcontato__grupo-input">
+                                    <input class="formcontato__input" id="nombre" type="text" name="nombre"
+                                        placeholder="Brenda Martínez" required data-tipo="nombre" minlength="6"
+                                        maxlength="50">
+                                    <i class="formcontato__validacion-estado fa-solid fa-circle-xmark"></i>
+                                </div>
+                                <span class="formcontato__input-error">"El campo nombre no puede estar vacío. Debe
+                                    contener entre 6 a 50 caracteres."
+                                </span>
+                            </div>
+
+                            <div class="input-container" id="input-container__email">
+                                <label for="email" class="formcontato__label">E-mail</label>
+                                <div class="formcontato__grupo-input">
+                                    <input class="formcontato__input" id="email" type="email" name="email"
+                                        placeholder="ejemplo@ejemplo.com" required data-tipo="email" minlength="6"
+                                        maxlength="50">
+                                    <i class="formcontato__validacion-estado fa-solid fa-circle-xmark"></i>
+                                    <span class="formcontato__input-error">"El correo no es válido. Deber estar en
+                                        formato e-mail conteniendo el caracter especial @, seguido de un dominio,
+                                        seguido de un punto. Ejemplo: texto@texto.com"</span>
+                                </div>
+                            </div>
+
+                            <div class="input-container" id="input-container__asunto">
+                                <label for="asunto" class="formcontato__label">Asunto</label>
+                                <div class="formcontato__grupo-input">
+                                    <input class="formcontato__input" id="asunto" type="text" name="asunto"
+                                        placeholder="Assunto" required data-tipo="asunto" minlength="6" maxlength="50">
+                                    <i class="formcontato__validacion-estado fa-solid fa-circle-xmark"></i>
+
+                                    <span class="formcontato__input-error">"El campo asunto no puede estar
+                                        vacío. Debe contener entre 6 a 50 caracteres. Solo letras"</span>
+                                </div>
+                            </div>
+
+
+                            <div class="input-container" id="input-container__mensaje">
+                                <label for="mensaje" class="formcontato__label">Mensaje</label>
+                                <div class="formcontato__grupo-input">
+                                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem"
+                                        name="mensaje" placeholder="Mensaje" required minlength="4"
+                                        maxlength="300"></textarea>
+                                    <i class="formcontato__validacion-estado fa-solid fa-circle-xmark"></i>
+
+                                    <span class="formcontato__input-error">"El campo mensaje no puede estar
+                                        vacío. Debe contener entre 6 a 300 caracteres"</span>
+                                </div>
+                            </div>
+
+                            <div class="input-container  input-container-btn-enviar">
+                                <button disabled id="btn" type="submit" class="formcontato__botao" >Enviar mensaje</button>
+                                
+                            </div>
+
                         </form>
                     </div>
                 </div>
@@ -329,7 +382,8 @@
             </section>
     </div>
     <!-- Script del documento JavaScript -->
-    <script src="validacion.js"></script>
+        <script defer src="validacion.js"></script>
+        <script src="https://kit.fontawesome.com/da1772a6fb.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

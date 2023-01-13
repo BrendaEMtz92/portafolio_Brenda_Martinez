@@ -18,12 +18,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 64px 0px 0px;
+    padding: 32px 0px 0px;
     gap: 16px;
-
     width: 1136px;
-    height: 660px;
-
+   
+   
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -98,6 +97,16 @@
     flex-grow: 0;
 }
 
+.formcontato__label{
+    display: block;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.formcontato__grupo-input{
+    position: relative;
+}
+
 .formcontato__form{
     display: flex;
     flex-direction: column;
@@ -121,14 +130,26 @@
     width: 656px;
     height: 56px;
 
+
     background: #FFFFFF;
     border-radius: 4px;
+    border: 3px solid transparent;
+    transition: .3s ease all;
+    line-height: 56px;
 
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+    
 }
+
+.formcontato__input:focus{
+    border: 3px solid #0075ff;
+    outline: none;
+    box-shadow: 3px 0px 38px rgba(163, 163, 163, 0.4);
+}
+
 
 .formcontato__textarea{
     
@@ -140,12 +161,43 @@
 
     background: #FFFFFF;
     border-radius: 4px;
+    border: 3px solid transparent;
+    transition: .3s ease all;
 
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
 }
+
+
+.formcontato__textarea:focus{
+    border: 3px solid #0075ff;
+    outline: none;
+    box-shadow: 3px 0px 38px rgba(163, 163, 163, 0.4);
+}
+
+
+.formcontato__input-error{
+    font-size: 16px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formcontato__input-error-activo{
+    display: block;
+}
+
+.formcontato__validacion-estado{
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    z-index: 100;
+    font-size: 20px;
+    opacity: 0;
+}
+
+
 
 .formcontato__botao{
     display: flex;
@@ -159,10 +211,45 @@
     height: 51px;
 
     background: #2A7AE4;
+    cursor: pointer;
+    transition: .1s ease all;
 
     flex: none;
     order: 2;
     flex-grow: 0;
+    
+}
+
+.formcontato__botao:hover{
+    box-shadow: 3px 8px 38px rgba(163, 163, 163, 1);
+}
+
+
+
+/*Estilos para validación*/
+
+.input-container-correcto .formcontato__validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.input-container-incorrecto .formcontato__label{
+    color: #bb2929;
+}
+
+.input-container-incorrecto .formcontato__validacion-estado{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.input-container-incorrecto .formcontato__input{
+    border: 3px solid #bb2929;
+}
+
+
+
+.input-container-incorrecto .formcontato__textarea{
+    border: 3px solid #bb2929;
 }
 
 @media screen and (max-width:768px) {
